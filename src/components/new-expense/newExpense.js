@@ -1,14 +1,10 @@
 import ExpenseForm from './expenseForm';
 import './newExpense.css';
 
-function NewExpense() {
-    var expenseData;
+function NewExpense(params) {
 
     function saveExpenseDataHandler(enteredExpenseData) {
-        expenseData = {
-            ...enteredExpenseData
-        };
-        console.log(expenseData);
+        params.addNewExpense(enteredExpenseData);
     }
 
     return <div className='new-expense'>

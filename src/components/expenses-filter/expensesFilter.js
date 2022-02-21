@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './expensesFilter.css';
 
 const ExpensesFilter = (params) => {
