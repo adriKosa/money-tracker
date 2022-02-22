@@ -1,7 +1,7 @@
 import './card.css'
 
-function Card(props) {
-   return <div className={'card ' + props.className}>{props.children}</div>
+function Card(params) {
+   return <div className={'card ' + params.className}>{params.children}</div>
 }
 
 export default Card
